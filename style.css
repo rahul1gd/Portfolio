@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  background-color: rgb(0, 255, 255);
+  width: 210px;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  transition: transform 0.3s;
+}
+
+.sidebar nav {
+  padding: 30px;
+}
+
+.sidebar nav li {
+  font-size: 30px;
+  list-style: none;
+  padding: 30px 0
+}
+
+.content {
+  /* background-color: yellow; */
+  width: 90vw;
+  padding:0 20px;
+}
+
+.container {
+  display: flex;
+}
+
+.devContainer {
+  /* background-color: violet; */
+  display: flex;
+  height: 58vh;
+  width: 80vw;
+  margin: 144px auto;
+  justify-content: space-around;
+}
+
+.divInfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.hello {
+  font-size: 60px
+}
+
+.name {
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.about {
+  font-size: 40px;
+}
+
+.moreabout {
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+.divPic img {
+  height: 58vh
+}
+
+.buttons {
+  margin: 30px 0
+}
+
+.buttons button {
+  padding: 14px;
+  border-radius: 28px;
+  font-size: 18px;
+  margin: 0 3px;
+  color: white;
+  background-color: dodgerblue;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  color: black;
+  background-color: white;
+}
+
+.sidebar a{
+  text-decoration: none;
+  color: black;
+}
+
+.contactform {
+  padding: 0 34px;
+  padding-top: 144px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contactform h1 {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.contactform form div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.contactform form div input {
+  border-radius: 10px;
+  width: 20vw;
+  font-size: 15px;
+  padding: 4px;
+  margin: 10px 0 0 0;
+}
+
+#form-check{
+  flex-direction: row;
+}
+
+#form-check input{
+  margin: 3px 0px;
+  width: 24px;
+}
+
+#emailHelp{
+  font-size: 14px;
+  color: currentcolor;
+}
+
+.btn {
+  margin: 0 10px;
+  padding: 7px 30px;
+  border-radius: 13px;
+  font-size: 18px;
+  color: white;
+  background-color: cornflowerblue;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* .sidebar-collpase{
+  transform: translate(-400px, 0);
+  position: absolute;
+} */
+
+.nav-icons{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.cross{
+  margin-left: 150px;
+}
+
+@media (max-width:1400px) {
+  .devContainer{
+    flex-wrap: wrap;
+  }
+
+  .sidebar-collpase{
+    transform: translate(-400px, 0);
+    position: absolute;
+  }
+
+  .cross{
+    margin-left: 130px
+  }
+
+  /* .content{
+    padding: 0 0;
+  } */
+}
